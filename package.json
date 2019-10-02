@@ -9,7 +9,7 @@
   "author": "Wadson Vaval",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt.js": "^2.3.0",
     "config": "^3.2.2",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
