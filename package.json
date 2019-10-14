@@ -4,12 +4,13 @@
   "description": "Following a traversi media course ",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server",
+    "server": "nodemon server"
   },
   "author": "Wadson Vaval",
   "license": "ISC",
   "dependencies": {
-    "bcrypt.js": "^2.3.0",
+    "bcryptjs": "^2.4.3",
     "config": "^3.2.2",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
