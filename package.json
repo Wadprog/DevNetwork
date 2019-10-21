@@ -4,13 +4,17 @@
   "description": "Following a traversi media course ",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server",
-    "server": "nodemon server"
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Wadson Vaval",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "concurrently": "^5.0.0",
     "config": "^3.2.2",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",

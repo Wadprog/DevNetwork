@@ -189,7 +189,7 @@ router.post('/comment/:id', auth, async (req, res) => {
 // @desc Add a new comment to  a post  
 // @access Private 
 
-router.
+//missing route 
 
 /*router.post('/', [auth,
     [check('text', "text is required").not().isEmpty]
